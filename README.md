@@ -10,7 +10,7 @@ is meant to be thrown away; the answers are what carry forward.
 | Spike | Question | Status |
 |---|---|---|
 | [`spike-look/`](spike-look/) | Do our console fonts, 16 colours and animations work on a Mac's text console, and can the live ISO use the GPU? | Done on 3 Macs, 2026-10-08 |
-| [`spike-modules/`](spike-modules/) | Can the stick load per-Mac kernel fixes (applesmc, the iMac10,1 radeon panel) into the official ISO's live system? | Built, not run yet |
+| [`spike-modules/`](spike-modules/) | Can the stick load per-Mac kernel fixes (applesmc, the iMac10,1 radeon panel) into the official ISO's live system? | Done on 3 Macs, 2026-10-09: both fixes work |
 | [`iso-grub-patch/`](iso-grub-patch/) | How do you get a GRUB menu (and `nomodeset`) on the official ISO? | Done: used for every run above |
 
 Still to come: a GRUB theme and Option-key startup icon on our own ISO build, and the build and

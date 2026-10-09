@@ -23,4 +23,18 @@ module unpatched and checks it against the one the ISO ships (applesmc by `srcve
 `../spike-look/modules/`; `../spike-look/build.sh` puts it on the stick, and
 `run-modules.sh` (`spike-look --modules`) loads and tests it.
 
-Results: not run yet.
+## Results (2026-10-09, Omarchy 4.0.4 ISO)
+
+Raw results are in [`results/`](results/). Both fixes worked on every Mac they apply to, with no
+oops in the kernel log.
+
+| Mac | applesmc (fixed) | radeon (panel fix) |
+|---|---|---|
+| [iMac (21.5-inch, Late 2009) [iMac10,1]](https://doesitomarchy.com/mac/imac10-1) | loads; 3 fans (ODD, HDD, CPU), 31 temperature sensors, light sensor | **panel right** (tester: y): LVDS 1920×1080 on radeondrmfb; RV730 GLES 3.0 / GL 3.3, test triangle correct, 1080p desktop-like load 464 fps (llvmpipe 32) |
+| [MacBook Air (13-inch, Mid 2012) [MacBookAir5,2]](https://doesitomarchy.com/mac/macbookair5-2) | loads **with the keyboard-backlight key** (the case that crashed): backlight blinked (tester: y); 1 fan, 30 sensors, light sensor | n/a |
+| [iMac (Retina 5K, 27-inch, 2017) [iMac18,3]](https://doesitomarchy.com/mac/imac18-3) | loads; 1 fan, 93 sensors, light sensor | n/a |
+
+So a test stick can carry per-Mac kernel fixes into the official ISO's live system: the live
+system gains the SMC (fans, temperatures, light sensor, keyboard backlight) on pre-T2 Macs, and
+the iMac10,1 gets its own panel and GPU instead of `nomodeset`. The modules are unsigned, so the
+kernel marks itself tainted; that's expected for out-of-tree modules.

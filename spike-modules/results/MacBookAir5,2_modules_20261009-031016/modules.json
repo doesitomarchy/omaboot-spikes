@@ -1,0 +1,90 @@
+{
+  "spike": "spike-look 1 (2026-10-08) --modules",
+  "started": "2026-10-09T03:10:17Z",
+  "mac": {
+    "model": "MacBookAir5,2",
+    "board_id": "Mac-2E6FAB96566FE58C",
+    "vendor": "Apple Inc.",
+    "firmware": "429.0.0.0.0",
+    "cpu": "Intel(R) Core(TM) i5-3427U CPU @ 1.80GHz",
+    "mem_mib": 3812,
+    "kernel": "7.2.4-arch1-Watanare-T2-3-t2",
+    "cmdline": "BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux-t2 archisobasedir=arch archisosearchuuid=2026-09-15-21-11-51-00 quiet splash xe.enable_panel_replay=0 initramfs_async=0",
+    "efi_bits": "64",
+    "omarchy_iso": "",
+    "framebuffers": [
+      {
+        "dev": "fb0",
+        "name": "i915drmfb",
+        "virtual_size": "1440,900",
+        "bits_per_pixel": "32",
+        "stride": "6144"
+      }
+    ],
+    "gpu_modules": [
+      "i915",
+      "drm_buddy",
+      "ttm",
+      "drm_display_helper",
+      "video"
+    ]
+  },
+  "applesmc": {
+    "already_loaded": false,
+    "insmod": "ok",
+    "oops": false,
+    "kmsg": [
+      "[ 94.26] \u003c4\u003e applesmc: loading out-of-tree module taints kernel.",
+      "[ 94.26] \u003c5\u003e applesmc: module verification failed: signature and/or required key missing - tainting kernel",
+      "[ 94.28] \u003c6\u003e applesmc: key=424 fan=1 temp=31 index=30 acc=0 lux=2 kbd=1",
+      "[ 94.29] \u003c4\u003e applesmc APP0001:00: hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().",
+      "[ 94.87] \u003c5\u003e audit: type=1130 audit(1791515428.474:154): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-backlight@leds:smc::kbd_backlight comm=\"systemd\" exe=\"/usr/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'"
+    ],
+    "sysfs_dir": "/sys/bus/acpi/devices/APP0001:00",
+    "fans": [
+      {
+        "label": "Exhaust",
+        "rpm": 2004,
+        "min": 2000,
+        "max": 6500
+      }
+    ],
+    "temps": [
+      "TB0T=19.0",
+      "TB1T=29.2",
+      "TB2T=33.0",
+      "TC0C=40.5",
+      "TC0D=41.0",
+      "TC0E=40.8",
+      "TC0F=42.2",
+      "TC0P=35.2",
+      "TC1C=40.0",
+      "TC2C=40.0",
+      "TCGC=40.0",
+      "TCSA=40.0",
+      "TCXC=40.5",
+      "TH0A=-127.0",
+      "TH0B=-127.0",
+      "TH0J=-127.0",
+      "TH0O=-127.0",
+      "TH0a=64.0",
+      "TH0b=64.0",
+      "TH0c=64.0",
+      "TH0x=64.0",
+      "THSP=33.8",
+      "TM0P=34.5",
+      "TPCD=48.0",
+      "Ta0P=38.0",
+      "Th1H=25.5",
+      "Tm0P=33.5",
+      "Tm1P=36.2",
+      "Ts0P=24.2",
+      "Ts0S=25.8"
+    ],
+    "light": "(8,0)",
+    "kbd_backlight": true,
+    "kbd_max_brightness": 255,
+    "kbd_lit": "y"
+  },
+  "finished": "2026-10-09T03:11:05Z"
+}

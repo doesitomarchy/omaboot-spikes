@@ -1,0 +1,13 @@
+tmp free: 15993 MiB
+unpack libglvnd-1.7.0-3-x86_64.pkg.tar.zst
+unpack libxshmfence-1.3.3-1-x86_64.pkg.tar.zst
+unpack libxxf86vm-1.1.7-1-x86_64.pkg.tar.zst
+unpack llvm-libs-22.1.8-2-x86_64.pkg.tar.zst
+unpack lm_sensors-1:3.6.2-1-x86_64.pkg.tar.zst
+unpack spirv-tools-1:1.4.357.0-1-x86_64.pkg.tar.zst
+unpack default-cursors-3-1-any.pkg.tar.zst
+unpack wayland-1.26.0-1-x86_64.pkg.tar.zst
+unpack mesa-1:26.2.2-1-x86_64.pkg.tar.zst
+unpacked 9 packages, 231 MiB, in 552 ms
+probe (gpu) exit 0
+probe (software) exit 0

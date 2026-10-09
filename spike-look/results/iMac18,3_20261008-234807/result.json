@@ -1,0 +1,551 @@
+{
+  "spike": "spike-look 1 (2026-10-08)",
+  "started": "2026-10-08T23:48:07Z",
+  "finished": "2026-10-08T23:50:41Z",
+  "completed": true,
+  "mac": {
+    "model": "iMac18,3",
+    "board_id": "Mac-BE088AF8C5EB4FA2",
+    "vendor": "Apple Inc.",
+    "firmware": "529.140.2.0.0",
+    "cpu": "Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz",
+    "mem_mib": 31985,
+    "kernel": "7.2.4-arch1-Watanare-T2-3-t2",
+    "cmdline": "BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux-t2 archisobasedir=arch archisosearchuuid=2026-09-15-21-11-51-00 quiet splash xe.enable_panel_replay=0 initramfs_async=0",
+    "efi_bits": "64",
+    "omarchy_iso": "",
+    "framebuffers": [
+      {
+        "dev": "fb0",
+        "name": "amdgpudrmfb",
+        "virtual_size": "3840,2160",
+        "bits_per_pixel": "32",
+        "stride": "15360"
+      }
+    ],
+    "gpu_modules": [
+      "amdgpu",
+      "drm_buddy",
+      "drm_panel_backlight_quirks",
+      "drm_exec",
+      "drm_suballoc_helper",
+      "drm_ttm_helper",
+      "ttm",
+      "drm_display_helper",
+      "video"
+    ]
+  },
+  "start_grid": [
+    240,
+    67
+  ],
+  "fonts": [
+    {
+      "font": "omaboot-v16n (ours)",
+      "ours": true,
+      "cols": 480,
+      "rows": 135,
+      "verdict": "too_small",
+      "symbols": "ok"
+    },
+    {
+      "font": "omaboot-v24n (ours)",
+      "ours": true,
+      "cols": 320,
+      "rows": 90,
+      "verdict": "good",
+      "symbols": "ok"
+    },
+    {
+      "font": "omaboot-v32n (ours)",
+      "ours": true,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good",
+      "symbols": "ok"
+    },
+    {
+      "font": "ter-v16n",
+      "ours": false,
+      "cols": 480,
+      "rows": 135,
+      "verdict": "too_small"
+    },
+    {
+      "font": "ter-v24n",
+      "ours": false,
+      "cols": 320,
+      "rows": 90,
+      "verdict": "good"
+    },
+    {
+      "font": "ter-v32n",
+      "ours": false,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good"
+    },
+    {
+      "font": "ter-v32b",
+      "ours": false,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good"
+    },
+    {
+      "font": "spleen-8x16",
+      "ours": false,
+      "cols": 480,
+      "rows": 135,
+      "verdict": "too_small"
+    },
+    {
+      "font": "spleen-12x24",
+      "ours": false,
+      "cols": 320,
+      "rows": 90,
+      "verdict": "good"
+    },
+    {
+      "font": "spleen-16x32",
+      "ours": false,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good"
+    },
+    {
+      "font": "spleen-32x64",
+      "ours": false,
+      "cols": 120,
+      "rows": 33,
+      "verdict": "too_big"
+    }
+  ],
+  "palette": {
+    "bright_backgrounds": "n",
+    "bright_text": "y",
+    "liked": "OmaBoot?"
+  },
+  "bubbletea_screen": {
+    "seconds": 20.1,
+    "frames": 299,
+    "fps": 14.8,
+    "looks": "ok"
+  },
+  "redraw": [
+    {
+      "font": "omaboot-v16n (ours)",
+      "cols": 480,
+      "rows": 135,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 34.71,
+        "p50_ms": 34.61,
+        "p95_ms": 37.46,
+        "max_ms": 37.46
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 4.42,
+            "p50_ms": 3.86,
+            "p95_ms": 6.89,
+            "max_ms": 7.13
+          },
+          "bytes_per_frame": 10501
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 4.12,
+            "p50_ms": 3.73,
+            "p95_ms": 5.4,
+            "max_ms": 6.18
+          },
+          "bytes_per_frame": 10441
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 3.72,
+            "p50_ms": 3.7,
+            "p95_ms": 5.13,
+            "max_ms": 7.64
+          },
+          "bytes_per_frame": 10391
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 726,
+          "write_ms": {
+            "n": 2179,
+            "mean_ms": 0.8,
+            "p50_ms": 0.76,
+            "p95_ms": 1.07,
+            "max_ms": 4.25
+          },
+          "bytes_per_frame": 10491
+        }
+      ]
+    },
+    {
+      "font": "omaboot-v24n (ours)",
+      "cols": 320,
+      "rows": 90,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 19.91,
+        "p50_ms": 19.66,
+        "p95_ms": 23.02,
+        "max_ms": 23.02
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 4.39,
+            "p50_ms": 4.48,
+            "p95_ms": 5.43,
+            "max_ms": 5.56
+          },
+          "bytes_per_frame": 7301
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 4.54,
+            "p50_ms": 4.44,
+            "p95_ms": 5.44,
+            "max_ms": 5.61
+          },
+          "bytes_per_frame": 7321
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 4.54,
+            "p50_ms": 4.41,
+            "p95_ms": 5.37,
+            "max_ms": 5.59
+          },
+          "bytes_per_frame": 7301
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 747.7,
+          "write_ms": {
+            "n": 2244,
+            "mean_ms": 0.94,
+            "p50_ms": 0.91,
+            "p95_ms": 1.09,
+            "max_ms": 5.09
+          },
+          "bytes_per_frame": 7291
+        }
+      ]
+    },
+    {
+      "font": "omaboot-v32n (ours)",
+      "cols": 240,
+      "rows": 67,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 12.22,
+        "p50_ms": 12.82,
+        "p95_ms": 13.32,
+        "max_ms": 13.32
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 4.7,
+            "p50_ms": 4.38,
+            "p95_ms": 7.44,
+            "max_ms": 8.65
+          },
+          "bytes_per_frame": 5511
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 4.26,
+            "p50_ms": 3.98,
+            "p95_ms": 6.11,
+            "max_ms": 8.11
+          },
+          "bytes_per_frame": 5491
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 4.18,
+            "p50_ms": 3.98,
+            "p95_ms": 4.9,
+            "max_ms": 6.24
+          },
+          "bytes_per_frame": 5511
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 864.1,
+          "write_ms": {
+            "n": 2593,
+            "mean_ms": 0.85,
+            "p50_ms": 0.82,
+            "p95_ms": 1.01,
+            "max_ms": 5.09
+          },
+          "bytes_per_frame": 5451
+        }
+      ]
+    }
+  ],
+  "redraw_looked": "smooth",
+  "drm": {
+    "cards": [
+      {
+        "card": "card1",
+        "pci": "1002:67df",
+        "subsys": "106b:0163",
+        "boot_vga": "1",
+        "driver": "amdgpu",
+        "drm_name": "amdgpu",
+        "drm_version": "3.64.0 (0)",
+        "drm_desc": "AMD GPU",
+        "render_node": "/dev/dri/renderD128",
+        "connectors": [
+          {
+            "name": "DP-1",
+            "status": "disconnected",
+            "enabled": "disabled",
+            "modes": null
+          },
+          {
+            "name": "DP-2",
+            "status": "disconnected",
+            "enabled": "disabled",
+            "modes": null
+          },
+          {
+            "name": "DP-3",
+            "status": "disconnected",
+            "enabled": "disabled",
+            "modes": null
+          },
+          {
+            "name": "eDP-1",
+            "status": "connected",
+            "enabled": "enabled",
+            "modes": [
+              "3840x2160",
+              "3200x1800",
+              "2560x1440",
+              "1920x1200",
+              "1920x1080",
+              "1600x1200"
+            ],
+            "edid": {
+              "maker": "APP",
+              "product": "ae11",
+              "name": "iMac",
+              "year": 2016,
+              "width_cm": 60,
+              "height_cm": 34,
+              "preferred_mode": "3840x2160@60.0",
+              "bytes": 256
+            }
+          }
+        ]
+      }
+    ],
+    "kmsg_gpu": [
+      "[  0.23] \u003c5\u003e ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored",
+      "[  0.28] \u003c6\u003e pci 0000:01:00.0: vgaarb: setting as boot VGA device",
+      "[  0.28] \u003c6\u003e pci 0000:01:00.0: vgaarb: bridge control possible",
+      "[  0.28] \u003c6\u003e pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none",
+      "[  0.28] \u003c6\u003e vgaarb: loaded",
+      "[  0.53] \u003c6\u003e ACPI: bus type drm_connector registered",
+      "[  0.54] \u003c6\u003e Relocating firmware framebuffer to offset 0x0000000000300000[d] within [mem 0xc0000000-0xcfffffff flags 0x14220c]",
+      "[  0.54] \u003c6\u003e simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic",
+      "[  0.54] \u003c6\u003e [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0",
+      "[  0.55] \u003c6\u003e fbcon: Deferring console take-over",
+      "[  0.55] \u003c6\u003e simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device",
+      "[  1.67] \u003c6\u003e ACPI: video: [Firmware Bug]: ACPI(GFX0) defines _DOD but not _DOS",
+      "[  6.20] \u003c6\u003e amdgpu: Virtual CRAT table created for CPU",
+      "[  6.20] \u003c6\u003e amdgpu: Topology: Add CPU node",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: initializing kernel modesetting (POLARIS10 0x1002:0x67DF 0x106B:0x0163 0xC5).",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: register mmio base: 0x92600000",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: register mmio size: 262144",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 0 \u003ccommon_v1_0_0\u003e (vi_common)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 1 \u003cgmc_v8_1_0\u003e (gmc_v8_0)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 2 \u003cih_v3_0_0\u003e (tonga_ih)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 3 \u003cgfx_v8_0_0\u003e (gfx_v8_0)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 4 \u003csdma_v3_1_0\u003e (sdma_v3_0)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 5 \u003csmu_v1_0_0\u003e (powerplay)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 6 \u003cdce_v1_0_0\u003e (dm)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 7 \u003cuvd_v6_3_0\u003e (uvd_v6_0)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: detected ip block number 8 \u003cvce_v3_4_0\u003e (vce_v3_0)",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: Fetched VBIOS from VFCT",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: [drm] ATOM BIOS: 113-D0001A1L-025, build: 378740  , ver: 015.050.000.001.000000, 2017/03/28",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: [drm] UVD is enabled in VM mode",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: [drm] UVD ENC is enabled in VM mode",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: Found VCE firmware Version: 53.26 Binary ID: 3",
+      "[  6.20] \u003c6\u003e amdgpu 0000:01:00.0: [drm] VCE enabled in VM mode",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: vgaarb: deactivate vga console",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: Trusted Memory Zone (TMZ) feature not supported",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: vm size is 128 GB, 2 levels, block size is 10-bit, fragment size is 9-bit",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: VRAM: 4096M 0x000000F400000000 - 0x000000F4FFFFFFFF (4096M used)",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: GART: 256M 0x000000FF00000000 - 0x000000FF0FFFFFFF",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Detected VRAM RAM=4096M, BAR=256M",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] RAM width 256bits GDDR5",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0:  4096M of VRAM memory ready",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0:  15992M of GTT memory ready.",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] GART: num cpu pages 65536, num gpu pages 65536",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] PCIE GART of 256M enabled (table at 0x000000F402000000).",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Chained IB support enabled!",
+      "[  6.22] \u003c6\u003e amdgpu: hwmgr_sw_init smu backed is polaris10_smu",
+      "[  6.22] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Found UVD firmware Version: 1.130 Family ID: 16",
+      "[  6.30] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Display Core v3.2.384 initialized on DCE 11.2",
+      "[  6.38] \u003c6\u003e amdgpu 0000:01:00.0: [drm] UVD and UVD ENC initialized successfully.",
+      "[  6.48] \u003c6\u003e amdgpu 0000:01:00.0: [drm] VCE initialized successfully.",
+      "[  6.49] \u003c6\u003e amdgpu: Virtual CRAT table created for GPU",
+      "[  6.49] \u003c6\u003e amdgpu: Topology: Add GPU node [0x1002:0x67df]",
+      "[  6.49] \u003c6\u003e amdgpu 0000:01:00.0: SE 4, SH per SE 1, CU per SH 9, active_cu_number 28",
+      "[  6.49] \u003c6\u003e amdgpu 0000:01:00.0: Runtime PM not available",
+      "[  6.49] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Skipping amdgpu DM backlight registration",
+      "[  6.49] \u003c6\u003e amdgpu 0000:01:00.0: [drm] Registered 6 planes with drm panic",
+      "[  6.50] \u003c6\u003e [drm] Initialized amdgpu 3.64.0 for 0000:01:00.0 on minor 1",
+      "[  6.51] \u003c6\u003e fbcon: amdgpudrmfb (fb0) is primary device",
+      "[  6.51] \u003c6\u003e fbcon: Deferring console take-over",
+      "[  6.51] \u003c6\u003e amdgpu 0000:01:00.0: [drm] fb0: amdgpudrmfb frame buffer device",
+      "[  9.39] \u003c6\u003e systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm",
+      "[  9.39] \u003c6\u003e systemd[1]: Clear SysFail Entry If The Boot Is Successful skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/LoaderEntrySysFail-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f",
+      "[  9.39] \u003c6\u003e systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67",
+      "[ 11.41] \u003c6\u003e snd_hda_intel 0000:01:00.1: bound 0000:01:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])",
+      "[ 11.49] \u003c6\u003e RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules",
+      "[ 12.02] \u003c3\u003e brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM43602/1 wl0: Nov 10 2015 06:38:10 version 7.35.177.61 (r598657) FWID 01-ea662a8c",
+      "[ 18.17] \u003c6\u003e fbcon: Taking over console"
+    ],
+    "kmsg_errors": 1
+  },
+  "egl": {
+    "exit_code": 0,
+    "seconds": 2.2,
+    "nodes": [
+      {
+        "node": "/dev/dri/renderD128",
+        "gbm_backend": "drm",
+        "ok": true,
+        "egl": "1.5",
+        "egl_vendor": "Mesa Project",
+        "surfaceless": true,
+        "contexts": [
+          {
+            "api": "gles3",
+            "ok": true,
+            "renderer": "AMD Radeon RX 470 Graphics (radeonsi, polaris10, ACO, DRM 3.64, 7.2.4-arch1-Watanare-T2-3-t2)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 9.8
+          },
+          {
+            "api": "gles2",
+            "ok": true,
+            "renderer": "AMD Radeon RX 470 Graphics (radeonsi, polaris10, ACO, DRM 3.64, 7.2.4-arch1-Watanare-T2-3-t2)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 5.6,
+            "bench_1080p_ms": 0.6,
+            "bench_1080p_fps": 1625.9,
+            "bench_frames": 120
+          },
+          {
+            "api": "gl",
+            "ok": true,
+            "renderer": "AMD Radeon RX 470 Graphics (radeonsi, polaris10, ACO, DRM 3.64, 7.2.4-arch1-Watanare-T2-3-t2)",
+            "version": "4.6 (Compatibility Profile) Mesa 26.2.2-arch1.1",
+            "glsl": "4.60"
+          }
+        ]
+      },
+      {
+        "node": "software",
+        "ok": true,
+        "egl": "1.5",
+        "egl_vendor": "Mesa Project",
+        "surfaceless": true,
+        "contexts": [
+          {
+            "api": "gles3",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 256 bits)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 25.8
+          },
+          {
+            "api": "gles2",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 256 bits)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 3.8,
+            "bench_1080p_ms": 10.2,
+            "bench_1080p_fps": 98.1,
+            "bench_frames": 120
+          },
+          {
+            "api": "gl",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 256 bits)",
+            "version": "4.6 (Compatibility Profile) Mesa 26.2.2-arch1.1",
+            "glsl": "4.60"
+          }
+        ]
+      }
+    ],
+    "log": [
+      "tmp free: 15993 MiB",
+      "unpack libglvnd-1.7.0-3-x86_64.pkg.tar.zst",
+      "unpack libxshmfence-1.3.3-1-x86_64.pkg.tar.zst",
+      "unpack libxxf86vm-1.1.7-1-x86_64.pkg.tar.zst",
+      "unpack llvm-libs-22.1.8-2-x86_64.pkg.tar.zst",
+      "unpack lm_sensors-1:3.6.2-1-x86_64.pkg.tar.zst",
+      "unpack spirv-tools-1:1.4.357.0-1-x86_64.pkg.tar.zst",
+      "unpack default-cursors-3-1-any.pkg.tar.zst",
+      "unpack wayland-1.26.0-1-x86_64.pkg.tar.zst",
+      "unpack mesa-1:26.2.2-1-x86_64.pkg.tar.zst",
+      "unpacked 9 packages, 231 MiB, in 552 ms",
+      "probe (gpu) exit 0",
+      "probe (software) exit 0"
+    ]
+  }
+}

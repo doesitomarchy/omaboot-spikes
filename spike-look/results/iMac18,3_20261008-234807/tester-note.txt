@@ -1,0 +1,1 @@
+Tester (the maintainer), 2026-10-08: animations good; flicker between animation screens (font/grid changes), same as the other two Macs.

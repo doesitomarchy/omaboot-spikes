@@ -1,0 +1,1 @@
+Tester (the maintainer), 2026-10-08: animation smooth; flicker only between screens (font/grid changes), same as the iMac10,1.

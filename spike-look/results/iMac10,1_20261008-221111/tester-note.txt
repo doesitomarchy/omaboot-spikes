@@ -1,0 +1,2 @@
+Tester (the maintainer), 2026-10-08: "redraw_looked: choppy" is wrong as recorded. The animation was smooth;
+the flicker happened between steps, when the font (screen size) changed, not during animation.

@@ -1,0 +1,431 @@
+{
+  "spike": "spike-look 1 (2026-10-08)",
+  "started": "2026-10-08T22:11:11Z",
+  "finished": "2026-10-08T22:17:43Z",
+  "completed": true,
+  "mac": {
+    "model": "iMac10,1",
+    "board_id": "Mac-F2268CC8",
+    "vendor": "Apple Inc.",
+    "firmware": "215.0.0.0.0",
+    "cpu": "Intel(R) Core(TM)2 Duo CPU     E7600  @ 3.06GHz",
+    "mem_mib": 11948,
+    "kernel": "7.2.4-arch1-Watanare-T2-3-t2",
+    "cmdline": "BOOT_IMAGE=/arch/boot/x86_64/vmlinuz-linux-t2 archisobasedir=arch archisosearchuuid=2026-09-15-21-11-51-00 nomodeset xe.enable_panel_replay=0 initramfs_async=0",
+    "efi_bits": "64",
+    "omarchy_iso": "",
+    "framebuffers": [
+      {
+        "dev": "fb0",
+        "name": "simpledrmdrmfb",
+        "virtual_size": "1920,1080",
+        "bits_per_pixel": "32",
+        "stride": "7680"
+      }
+    ],
+    "gpu_modules": [
+      "apple_bl",
+      "amdgpu",
+      "drm_buddy",
+      "drm_panel_backlight_quirks",
+      "video",
+      "drm_exec",
+      "drm_suballoc_helper",
+      "drm_ttm_helper",
+      "ttm",
+      "drm_display_helper"
+    ]
+  },
+  "start_grid": [
+    240,
+    67
+  ],
+  "fonts": [
+    {
+      "font": "omaboot-v16n (ours)",
+      "ours": true,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good",
+      "symbols": "ok"
+    },
+    {
+      "font": "omaboot-v24n (ours)",
+      "ours": true,
+      "cols": 160,
+      "rows": 45,
+      "verdict": "good",
+      "symbols": "ok"
+    },
+    {
+      "font": "omaboot-v32n (ours)",
+      "ours": true,
+      "cols": 120,
+      "rows": 33,
+      "verdict": "good",
+      "symbols": "ok"
+    },
+    {
+      "font": "ter-v16n",
+      "ours": false,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "too_small"
+    },
+    {
+      "font": "ter-v24n",
+      "ours": false,
+      "cols": 160,
+      "rows": 45,
+      "verdict": "good"
+    },
+    {
+      "font": "ter-v32n",
+      "ours": false,
+      "cols": 120,
+      "rows": 33,
+      "verdict": "too_big"
+    },
+    {
+      "font": "ter-v32b",
+      "ours": false,
+      "cols": 120,
+      "rows": 33,
+      "verdict": "too_big"
+    },
+    {
+      "font": "spleen-8x16",
+      "ours": false,
+      "cols": 240,
+      "rows": 67,
+      "verdict": "good"
+    },
+    {
+      "font": "spleen-12x24",
+      "ours": false,
+      "cols": 160,
+      "rows": 45,
+      "verdict": "good"
+    },
+    {
+      "font": "spleen-16x32",
+      "ours": false,
+      "cols": 120,
+      "rows": 33,
+      "verdict": "too_big"
+    },
+    {
+      "font": "spleen-32x64",
+      "ours": false,
+      "cols": 60,
+      "rows": 16,
+      "verdict": "too_big"
+    }
+  ],
+  "palette": {
+    "bright_backgrounds": "n",
+    "bright_text": "y",
+    "liked": "OmaBoot?"
+  },
+  "bubbletea_screen": {
+    "seconds": 30.3,
+    "frames": 450,
+    "fps": 14.8,
+    "looks": "ok"
+  },
+  "redraw": [
+    {
+      "font": "omaboot-v16n (ours)",
+      "cols": 240,
+      "rows": 67,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 21.88,
+        "p50_ms": 23.01,
+        "p95_ms": 25.45,
+        "max_ms": 25.45
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 1.57,
+            "p50_ms": 1.5,
+            "p95_ms": 2.36,
+            "max_ms": 2.57
+          },
+          "bytes_per_frame": 5511
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 1.64,
+            "p50_ms": 1.53,
+            "p95_ms": 2.35,
+            "max_ms": 2.47
+          },
+          "bytes_per_frame": 5491
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 1.51,
+            "p50_ms": 1.49,
+            "p95_ms": 1.97,
+            "max_ms": 2.47
+          },
+          "bytes_per_frame": 5511
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 500.6,
+          "write_ms": {
+            "n": 1503,
+            "mean_ms": 1.29,
+            "p50_ms": 1.2,
+            "p95_ms": 2.51,
+            "max_ms": 4.01
+          },
+          "bytes_per_frame": 5451
+        }
+      ]
+    },
+    {
+      "font": "omaboot-v24n (ours)",
+      "cols": 160,
+      "rows": 45,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 17.47,
+        "p50_ms": 16.99,
+        "p95_ms": 22.56,
+        "max_ms": 22.56
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 2.08,
+            "p50_ms": 2.08,
+            "p95_ms": 2.78,
+            "max_ms": 2.85
+          },
+          "bytes_per_frame": 4851
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 2.28,
+            "p50_ms": 2.12,
+            "p95_ms": 2.91,
+            "max_ms": 2.93
+          },
+          "bytes_per_frame": 4851
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 2.34,
+            "p50_ms": 2.15,
+            "p95_ms": 2.96,
+            "max_ms": 3.16
+          },
+          "bytes_per_frame": 4831
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 519.1,
+          "write_ms": {
+            "n": 1559,
+            "mean_ms": 1.32,
+            "p50_ms": 1.07,
+            "p95_ms": 2.65,
+            "max_ms": 4.33
+          },
+          "bytes_per_frame": 4831
+        }
+      ]
+    },
+    {
+      "font": "omaboot-v32n (ours)",
+      "cols": 120,
+      "rows": 33,
+      "full_repaint": {
+        "n": 6,
+        "mean_ms": 9.95,
+        "p50_ms": 10.59,
+        "p95_ms": 11.28,
+        "max_ms": 11.28
+      },
+      "band": [
+        {
+          "target_fps": 10,
+          "achieved_fps": 9.9,
+          "write_ms": {
+            "n": 30,
+            "mean_ms": 1.92,
+            "p50_ms": 2.16,
+            "p95_ms": 2.71,
+            "max_ms": 2.73
+          },
+          "bytes_per_frame": 3311
+        },
+        {
+          "target_fps": 15,
+          "achieved_fps": 14.9,
+          "write_ms": {
+            "n": 45,
+            "mean_ms": 2.36,
+            "p50_ms": 2.22,
+            "p95_ms": 3.28,
+            "max_ms": 3.3
+          },
+          "bytes_per_frame": 3351
+        },
+        {
+          "target_fps": 30,
+          "achieved_fps": 29.9,
+          "write_ms": {
+            "n": 90,
+            "mean_ms": 1.99,
+            "p50_ms": 2.14,
+            "p95_ms": 3.27,
+            "max_ms": 3.39
+          },
+          "bytes_per_frame": 3411
+        },
+        {
+          "target_fps": 0,
+          "achieved_fps": 506.6,
+          "write_ms": {
+            "n": 1520,
+            "mean_ms": 1.55,
+            "p50_ms": 1.52,
+            "p95_ms": 2.49,
+            "max_ms": 4.47
+          },
+          "bytes_per_frame": 3451
+        }
+      ]
+    }
+  ],
+  "redraw_looked": "choppy",
+  "drm": {
+    "cards": [
+      {
+        "card": "card0",
+        "pci": ":",
+        "subsys": ":",
+        "boot_vga": "",
+        "driver": "simple-framebuffer",
+        "drm_name": "simpledrm",
+        "drm_version": "1.0.0 (0)",
+        "drm_desc": "DRM driver for simple-framebuffer platform devices",
+        "render_node": "",
+        "connectors": [
+          {
+            "name": "Unknown-1",
+            "status": "connected",
+            "enabled": "enabled",
+            "modes": [
+              "1920x1080"
+            ]
+          }
+        ]
+      }
+    ],
+    "kmsg_gpu": [
+      "[  0.11] \u003c4\u003e Booted with the nomodeset parameter. Only the system framebuffer will be available",
+      "[  0.53] \u003c6\u003e fbcon: Taking over console",
+      "[  0.58] \u003c6\u003e pci 0000:02:00.0: vgaarb: setting as boot VGA device",
+      "[  0.58] \u003c6\u003e pci 0000:02:00.0: vgaarb: bridge control possible",
+      "[  0.58] \u003c6\u003e pci 0000:02:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none",
+      "[  0.58] \u003c6\u003e vgaarb: loaded",
+      "[  1.23] \u003c6\u003e ACPI: bus type drm_connector registered",
+      "[  1.36] \u003c6\u003e Relocating firmware framebuffer to offset 0x0000000000010000[d] within [mem 0xc0000000-0xcfffffff flags 0x14220c]",
+      "[  1.36] \u003c6\u003e simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic",
+      "[  1.36] \u003c6\u003e [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0",
+      "[  1.38] \u003c6\u003e simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device",
+      "[  9.64] \u003c6\u003e amdgpu: Virtual CRAT table created for CPU",
+      "[  9.65] \u003c6\u003e amdgpu: Topology: Add CPU node",
+      "[  9.65] \u003c3\u003e amdgpu 0000:02:00.0: probe with driver amdgpu failed with error -22",
+      "[ 15.39] \u003c6\u003e systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm",
+      "[ 15.40] \u003c6\u003e systemd[1]: Clear SysFail Entry If The Boot Is Successful skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/LoaderEntrySysFail-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f",
+      "[ 15.40] \u003c6\u003e systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67",
+      "[ 19.75] \u003c6\u003e input: HDA NVidia Headphone as /devices/pci0000:00/0000:00:08.0/sound/card0/input11"
+    ],
+    "kmsg_errors": 1
+  },
+  "egl": {
+    "exit_code": 0,
+    "seconds": 3.8,
+    "nodes": [
+      {
+        "node": "software",
+        "ok": true,
+        "egl": "1.5",
+        "egl_vendor": "Mesa Project",
+        "surfaceless": true,
+        "contexts": [
+          {
+            "api": "gles3",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 128 bits)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 48.1
+          },
+          {
+            "api": "gles2",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 128 bits)",
+            "version": "OpenGL ES 3.2 Mesa 26.2.2-arch1.1",
+            "glsl": "OpenGL ES GLSL ES 3.20",
+            "draw_ok": true,
+            "draw_pixel": "64,128,191,255",
+            "draw_ms": 8.3,
+            "bench_1080p_ms": 29.2,
+            "bench_1080p_fps": 34.3,
+            "bench_frames": 69
+          },
+          {
+            "api": "gl",
+            "ok": true,
+            "renderer": "llvmpipe (LLVM 22.1.8, 128 bits)",
+            "version": "4.6 (Compatibility Profile) Mesa 26.2.2-arch1.1",
+            "glsl": "4.60"
+          }
+        ]
+      }
+    ],
+    "log": [
+      "no render nodes (no GPU driver): software renderer only",
+      "tmp free: 5975 MiB",
+      "unpack libglvnd-1.7.0-3-x86_64.pkg.tar.zst",
+      "unpack libxshmfence-1.3.3-1-x86_64.pkg.tar.zst",
+      "unpack libxxf86vm-1.1.7-1-x86_64.pkg.tar.zst",
+      "unpack llvm-libs-22.1.8-2-x86_64.pkg.tar.zst",
+      "unpack lm_sensors-1:3.6.2-1-x86_64.pkg.tar.zst",
+      "unpack spirv-tools-1:1.4.357.0-1-x86_64.pkg.tar.zst",
+      "unpack default-cursors-3-1-any.pkg.tar.zst",
+      "unpack wayland-1.26.0-1-x86_64.pkg.tar.zst",
+      "unpack mesa-1:26.2.2-1-x86_64.pkg.tar.zst",
+      "unpacked 9 packages, 231 MiB, in 1240 ms",
+      "probe (software) exit 0"
+    ]
+  }
+}

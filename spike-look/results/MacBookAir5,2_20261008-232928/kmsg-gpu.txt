@@ -1,0 +1,28 @@
+[  0.12] <3> DMAR-IR: [Firmware Bug]: ioapic 2 has no mapping iommu, interrupt remapping will be disabled
+[  0.12] <6> Spectre V2 : Enabling Restricted Speculation for firmware calls
+[  0.25] <5> ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[  0.26] <6> acpi PNP0A08:00: [Firmware Info]: ECAM [mem 0xe0000000-0xe99fffff] for domain 0000 [bus 00-99] only partially covers this bridge
+[  0.29] <6> pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[  0.29] <6> pci 0000:00:02.0: vgaarb: bridge control possible
+[  0.29] <6> pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[  0.29] <6> vgaarb: loaded
+[  0.89] <6> ACPI: bus type drm_connector registered
+[  0.90] <6> simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[  0.90] <6> [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[  0.90] <6> fbcon: Deferring console take-over
+[  0.90] <6> simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[  3.12] <6> i915 0000:00:02.0: [drm] Found ivybridge (device ID 0166) integrated display version 7.00 stepping N/A
+[  3.13] <6> i915 0000:00:02.0: vgaarb: deactivate vga console
+[  3.22] <6> i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io:owns=io+mem
+[  3.24] <6> i915 0000:00:02.0: [drm] Skipping intel_backlight registration
+[  3.24] <6> i915 0000:00:02.0: [drm] Registered 3 planes with drm panic
+[  3.25] <6> [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 1
+[  3.35] <6> fbcon: i915drmfb (fb0) is primary device
+[  3.35] <6> fbcon: Deferring console take-over
+[  3.35] <6> i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[  8.88] <6> systemd[1]: Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[  8.88] <6> systemd[1]: Clear SysFail Entry If The Boot Is Successful skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/LoaderEntrySysFail-4a67b082-0a4c-41cf-b6c7-440b29bb8c4f
+[  8.88] <6> systemd[1]: Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[ 11.94] <6> RAPL PMU: hw unit of domain pp1-gpu 2^-16 Joules
+[ 12.59] <6> snd_hda_intel 0000:00:1b.0: bound 0000:00:02.0 (ops intel_audio_component_bind_ops [i915])
+[ 22.28] <6> fbcon: Taking over console

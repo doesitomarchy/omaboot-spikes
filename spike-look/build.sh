@@ -9,6 +9,7 @@ CGO_ENABLED=0 go build -trimpath -ldflags='-s -w' -o "$D/spike-look" .
 gcc -O2 -Wall -o "$D/egl/egl-probe" egl/egl-probe.c -lEGL -lGLESv2 -lgbm
 cp egl/egl.sh "$D/egl/"
 cp fonts/* "$D/fonts/"
-cp run.sh STICK-README.txt "$D/"
-chmod +x "$D/run.sh" "$D/spike-look" "$D/egl/egl.sh" "$D/egl/egl-probe"
+cp run.sh run-modules.sh STICK-README.txt "$D/"
+if [ -f modules/applesmc.ko ]; then mkdir -p "$D/modules" && cp modules/*.ko "$D/modules/"; else echo "no modules/ (run ../spike-modules/build-modules.sh): --modules mode will have nothing to load"; fi
+chmod +x "$D/run.sh" "$D/run-modules.sh" "$D/spike-look" "$D/egl/egl.sh" "$D/egl/egl-probe"
 du -sh "$D"

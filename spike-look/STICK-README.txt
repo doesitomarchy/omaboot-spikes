@@ -13,3 +13,9 @@ OmaBoot? Live spike (look + graphics + llvmpipe), 2026-10-08
 
 Results: results/<Mac model>_<date-time>/ (result.json, egl.json, egl.log, kmsg-gpu.txt).
 No serial numbers or disk IDs are recorded. Nothing is written to the Mac's own disks.
+
+Patched drivers (second run, optional):
+   mount -L BOOTLIVE /mnt && /mnt/run-modules.sh
+Loads our fixed applesmc (fans, temperatures, light sensor, keyboard backlight) on any Mac,
+and on the iMac10,1 (booted with the nomodeset entry) the radeon panel fix plus the GPU test.
+Modules live in RAM only; a restart undoes them. Built for the Omarchy 4.0.4 ISO's kernel.

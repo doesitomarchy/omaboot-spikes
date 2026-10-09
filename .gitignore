@@ -1,3 +1,4 @@
 spike-look/dist/
 *.iso
 __pycache__/
+spike-look/modules/

@@ -290,7 +290,7 @@ func (s *Spike) bench() bool {
 		}
 		r.FullRepaint = stats(full)
 		s.header("4/6 redraw speed", f.label+fmt.Sprintf(" · %d × %d · hands off, ~20 s", cols, rows))
-		band := 10
+		band := 12
 		y0 := 3
 		for _, fps := range []int{10, 15, 30, 0} {
 			var d []time.Duration

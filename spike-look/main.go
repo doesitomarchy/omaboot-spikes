@@ -44,6 +44,7 @@ type Spike struct {
 
 func main() {
 	selftest := flag.Bool("selftest", false, "no console: collect what can be collected and write results (for the laptop)")
+	mods := flag.Bool("modules", false, "load the patched applesmc/radeon modules from the stick and test them")
 	stick := flag.String("stick", ".", "the stick's folder (fonts/, egl/, results/)")
 	flag.Parse()
 
@@ -55,7 +56,11 @@ func main() {
 	if name == "" {
 		name = "unknown"
 	}
-	s.outDir = filepath.Join(*stick, "results", name+"_"+time.Now().Format("20060102-150405"))
+	kind := ""
+	if *mods {
+		kind = "_modules"
+	}
+	s.outDir = filepath.Join(*stick, "results", name+kind+"_"+time.Now().Format("20060102-150405"))
 	if err := os.MkdirAll(s.outDir, 0o755); err != nil {
 		fmt.Fprintln(os.Stderr, "can't write results:", err)
 		os.Exit(1)
@@ -75,6 +80,13 @@ func main() {
 	go func() { <-sig; s.finish(); os.Exit(1) }()
 
 	s.con.setPalette(palettes[0].c)
+	if *mods {
+		s.modules()
+		s.con.restore()
+		fmt.Printf("Results: %s\n", s.outDir)
+		fmt.Println("Done. Type: sync; umount /mnt   then unplug the stick.")
+		return
+	}
 	if s.intro() && s.fonts() && s.palette() && s.layout() && s.bench() && s.gpu() {
 		s.res.Completed = true
 	}

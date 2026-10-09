@@ -77,7 +77,7 @@ func (m layoutModel) View() string {
 	b.WriteString(head + "\n\n")
 	// animation band: a small field beside Boot (drawn as plain lines here: Bubble Tea renders lines)
 	sprite := bootRows(t, "neutral")
-	band := 7
+	band := 12 // the prototype's band height (tester preferred it to 7)
 	fw := max(m.w-26, 10)
 	for y := 0; y < band; y++ {
 		var line strings.Builder
